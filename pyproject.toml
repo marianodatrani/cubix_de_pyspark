@@ -1,0 +1,20 @@
+[project]
+name = "cubix-de-pyspark"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Balazs Adorjan",email = "adorjanbalazs.data@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyspark (==3.5.7)",
+    "pandas (>=2.3.3,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "cubix_de_pyspark", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
